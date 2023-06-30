@@ -22,6 +22,8 @@
 	--main-color:#ffb411;
 	--text-color:#1e1c2a;
 	--bg-color:#fff;
+    --form-color:#FFDEB4;
+    --formtxt-color:#fff;
 
 	--big-font:4rem;
 	--h2-font:2.24rem;
@@ -30,13 +32,19 @@
 body.active{
 	--text-color:#fff;
 	--bg-color:#1e1c2a;
-    
-}
+    #fo1{
+    --form-color:#ffffff3f;
+        }
+    #name, #email, #Phone, #message{
+        color:var(--text-color);
+    } 
+
+    }
 
 body{
 	color: var(--text-color);
 	background: var(--bg-color);
-    
+  
 }
 header{
 	position: fixed;
@@ -113,7 +121,7 @@ header{
     justify-content: center;
 }
 form{
-    background: rgba(191, 201, 200, 0.23);
+    background: var(--form-color);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -146,6 +154,10 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+
+#name, #email, #Phone, #message{
+    color:var(--text-color);
 }
 
 
