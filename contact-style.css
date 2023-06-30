@@ -36,6 +36,9 @@ body.active{
 body{
 	color: var(--text-color);
 	background: var(--bg-color);
+    #form{
+        background: rgba(43, 10, 77, 0.23);
+    }
 }
 header{
 	position: fixed;
@@ -112,7 +115,7 @@ header{
     justify-content: center;
 }
 form{
-    background: #ecce8c;
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -133,6 +136,18 @@ form input,form textarea{
     outline: none;
     background: var(--bg-color);
     font-size: 12px;
+}
+form button{
+    padding: 15px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 19px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
 
 
