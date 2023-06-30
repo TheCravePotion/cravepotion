@@ -34,6 +34,8 @@ body.active{
 	--text-color:#fff;
 	--bg-color:#1e1c2a;
 }
+.contact.active{
+	background-color: #e7e2ff7e;
 
 body{
 	color: var(--text-color);
