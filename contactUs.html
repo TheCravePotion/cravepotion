@@ -25,7 +25,7 @@
 	</header>
 
     <div class="container">
-        <form onsubmit="sendEmail()" id="fo1">
+        <form onsubmit="sendEmail(); reset(); return false" id="fo1">
             <h3>
                 GET IN TOUCH
             </h3>
@@ -75,7 +75,7 @@
             To : 'john.it@sbccphil.com',
             From : document.getElementById("email").value,
             Subject : "New Contact Form",
-            Body : document.getElementById("Message").value
+            Body : "And this is "
         }).then(
         message => alert(message)
         );
