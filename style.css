@@ -36,8 +36,8 @@ body.active{
 	#contact{
 	background-color: #e7e2ff7e;
 	}
-	#box{
-	box-shadow: 0 4px 8px rgba(210, 204, 204, 0.26);
+	.box{
+	box-shadow: 0 4px 8px rgba(132, 245, 245, 0.31);
 	}
 }
 
