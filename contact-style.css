@@ -30,12 +30,7 @@
 body.active{
 	--text-color:#fff;
 	--bg-color:#1e1c2a;
-	#contact{
-	background-color: #e7e2ff7e;
-	}
-	#boxcon{
-	box-shadow: 0 8px 8px rgba(225, 245, 245, 0.31);
-	}
+	
 }
 
 body{
