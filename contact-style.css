@@ -112,7 +112,7 @@ header{
     justify-content: center;
 }
 form{
-    background: var(--bg-color);
+    background: #ecce8c;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
