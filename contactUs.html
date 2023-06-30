@@ -25,14 +25,14 @@
 	</header>
 
     <div class="container">
-        <form id="fo1">
+        <form onsubmit="sendEmail()" id="fo1">
             <h3>
                 GET IN TOUCH
             </h3>
             <input type="text" name="" id="name" placeholder="Your Name" required> 
             <input type="text" name="" id="email" placeholder="E-mail" required>
             <input type="text" name="" id="Phone" placeholder="Phone Number" required>   
-            <textarea id="message" rows="4" placeholder="What is your Order?"></textarea> 
+            <textarea id="Message" rows="4" placeholder="What is your Order?"></textarea> 
             <button type="submit">Send</button>
         </form>
     </div>
@@ -64,5 +64,22 @@
 <!--Scroll Reveal-->
 <script src="https://unpkg.com/scrollreveal"></script>
 	<script src="main.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "johncarlmogol@gmail.com",
+            Password : "162897JohnCarlJona28",
+            To : 'john.it@sbccphil.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form",
+            Body : document.getElementById("Message").value
+        }).then(
+        message => alert(message)
+        );
+        }
+    </script>
 </body>
 </html>
