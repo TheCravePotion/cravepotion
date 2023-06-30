@@ -120,6 +120,24 @@ form{
     max-width: 600px;
     border-radius: 10px;
 }
+form h3{
+    color:var(--text-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input,form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: var(--bg-color);
+    font-size: 12px;
+}
+
+
+
+
 
 
 
