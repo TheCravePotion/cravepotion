@@ -30,15 +30,16 @@
 body.active{
 	--text-color:#fff;
 	--bg-color:#1e1c2a;
+    form{
+        background: var(--bg-color);
+    }
 	
 }
 
 body{
 	color: var(--text-color);
 	background: var(--bg-color);
-    form{
-        background: var(--bg-color);
-    }
+    
 }
 header{
 	position: fixed;
@@ -115,7 +116,7 @@ header{
     justify-content: center;
 }
 form{
-    background: rgba(43, 10, 77, 0.23);
+    background: var(--text-color);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
