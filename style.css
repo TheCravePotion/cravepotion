@@ -43,8 +43,8 @@ body.active{
 
 
 body{
-	color: var(--bg-color);
-	background: var(--text-color);
+	color: var(--text-color);
+	background: var(--bg-color);
 }
 #darkmode{
 	font-size: 25px;
