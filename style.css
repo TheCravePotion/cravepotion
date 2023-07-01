@@ -19,8 +19,8 @@
 
 :root{
 	--main-color:#ffb411;
-	--text-color:#1e1c2a;
-	--bg-color:#fff;
+	--text-color:#fff;
+	--bg-color:#1e1c2a;
 
 	--big-font:4rem;
 	--h2-font:2.24rem;
@@ -31,8 +31,8 @@ section{
 	padding: 50px 10%;
 }
 body.active{
-	--text-color:#fff;
-	--bg-color:#1e1c2a;
+	--text-color:#1e1c2a;
+	--bg-color:#fff;
 	#contact{
 	background-color: #e7e2ff7e;
 	}
