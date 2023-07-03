@@ -253,7 +253,7 @@ header{
 	font-size: var(--h2-font);
 }
 .contact{
-	background-color: #E1ECC8;
+	background-color: #A7727D;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 	gap: 1.5rem;
