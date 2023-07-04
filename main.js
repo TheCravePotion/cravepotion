@@ -34,3 +34,18 @@ const sr =ScrollReveal({
 })
 
 sr.reveal('.home-text, .home-img, .about-text, .about-img, .box, .s-box, .connect-text, .btn, .contact-box',{interval:200})
+
+let previewContainer =document.querySelector('.prod-review');
+let previewBox=previewContainer.querySelectorAll('.preview');
+document.querySelectorAll('.menu-container .box').forEach(box=>{
+	box.onclick = ()=>{
+		previewContainer.style.display='flex';
+		let name = box.getAttribute('data-name');
+		previewBox.forEach(preview =>{
+			let target = preview.getAttribute('data-target');
+			if(name==target){
+				preview.classList.add('active');
+			}
+		});
+	};
+});

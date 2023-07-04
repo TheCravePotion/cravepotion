@@ -36,6 +36,9 @@ body.active{
 	#boxcon{
 	box-shadow: 0 8px 8px rgba(225, 245, 245, 0.31);
 	}
+	.box:hover{
+		box-shadow: 0 8px 8px rgba(8, 8, 8, 0.226);
+	 }
 }
 
 body{
@@ -119,6 +122,11 @@ header{
 	border-radius: 0.5rem;
 	box-shadow: 0 2px 4px rgba(4, 64, 54, 0.226);
 	padding: 10px;
+	cursor: pointer;
+ }
+
+ .box:hover{
+	box-shadow: 0 8px 8px rgba(8, 8, 8, 0.226);
  }
  .box-img{
 	width: 200px;
@@ -241,3 +249,111 @@ header{
 	}
 }
 
+.box-img:hover{
+	transform: scale(.9);
+	
+ }
+
+.prod-review{
+	margin-top: 50px;
+	position: fixed;
+	top: 0 ;
+	left: 0;
+	min-height: 100vh;
+	width: 100%;
+	background: rgba(0,0,0,.8);
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.prod-review .preview{
+	display: none;
+	padding: 2rem;
+	text-align: center;
+	background: #fff;
+	position:relative;
+	margin: 2rem;
+	width: 40rem;
+}
+.prod-review .preview.active{
+	display:inline-block;
+	
+}
+.prod-review .preview img{
+	height: 25rem;
+}
+
+.prod-review .preview .fa-times{
+	position:absolute;
+	top: .5rem; right: 1rem;
+	cursor: pointer;
+	color: #1e1c2a;
+	font-size: 2.5rem;
+
+}
+
+.prod-review .preview .fa-times:hover{
+	transform: rotate(90deg);
+}
+
+.prod-review .preview h3{
+	color: #444;
+	padding: .5rem 0;
+	font-size: 2.5rem;
+}
+.prod-review .preview .fa-star{
+	font-size: 1.7rem ;
+	color: #ffa400;
+	margin-bottom: 20px;
+}
+.prod-review .preview span{
+	color: #999;
+}
+.prod-review .preview p{
+	line-height: 1.5;
+	padding: 5px 0;
+	font-size: 1.2rem;
+	color:#464646;
+}
+
+.prod-review .preview .price{
+	padding: 3px 0;
+	font-size: 1.5rem;
+	color: #3a3a39;
+}
+
+.prod-review .preview .buttons{
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	margin-top: .5rem;
+
+}
+
+.prod-review .preview .buttons a{
+	flex: .5 .5 10rem;
+	padding: 3px;
+	font-size:1.3rem;
+	color: #5e3d00;
+	border: 3px solid #ad7203;
+}
+
+.prod-review .preview .buttons a.cart{
+	background: #f8b02a;
+	color: #5e3d00;
+}
+
+.prod-review .preview .buttons a.cart:hover{
+	background: #855d12;
+	color: #f5f5f5;
+}
+
+.prod-review .preview .buttons a.buy{
+	background: #f8b02a;
+	color: #5e3d00;
+}
+
+.prod-review .preview .buttons a.buy:hover{
+	background: #855d12;
+	color: #f5f5f5;
+}
