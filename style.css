@@ -183,8 +183,17 @@ header{
 	justify-content: center;
 	align-items: center;
 	border-radius: 0.5rem;
-	box-shadow: 0 2px 4px rgba(56, 40, 24, 0.21);
+	box-shadow: 0 2px 4px rgba(255, 253, 251, 0.473);
 	padding: 10px;
+	outline: .1rem solid #222;
+	outline-offset: -1.5rem;
+	cursor: pointer;
+ }
+
+ .box:hover{
+	outline: .2rem solid #222;
+	outline-offset: 0;
+
  }
  .box-img{
 	width: 200px;
@@ -196,6 +205,9 @@ header{
 	height: 100%;
 	object-fit: contain;
 	object-position: center;
+ }
+ .box-img:hover img{
+	transform: scale(.8);
  }
  .box h2{
 	font-size: 1.2rem;
