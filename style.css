@@ -188,11 +188,6 @@ header{
 	cursor: pointer;
  }
 
- .box:hover{
-	outline: .2rem solid #ffffff;
-	outline-offset: 0;
-
- }
  .box-img{
 	width: 200px;
 	height: 250px;
@@ -204,7 +199,7 @@ header{
 	object-fit: contain;
 	object-position: center;
  }
- .box-img:hover img{
+ .box-img:hover{
 	transform: scale(.8);
  }
  .box h2{
