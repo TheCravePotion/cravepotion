@@ -20,26 +20,24 @@
 
 :root{
 	--main-color:#ffb411;
-	--text-color:#1e1c2a;
-	--bg-color:#fff;
+	--text-color:#fff;
+	--bg-color:#1e1c2a;
 
 	--big-font:4rem;
 	--h2-font:2.24rem;
 	--p-font:0.9rem;
 }
 body.active{
-	--text-color:#fff;
-	--bg-color:#1e1c2a;
+	--text-color:#1e1c2a;
+	--bg-color:#fff;
 	#contact{
-	background-color: #e7e2ff7e;
+	background-color: #FFCEFE;
 	}
 	#boxcon{
-	box-shadow: 0 8px 8px rgba(225, 245, 245, 0.31);
+	box-shadow: 1px 8px 8px rgba(79, 85, 85, 0.31);
 	}
-	.box:hover{
-		box-shadow: 0 8px 8px rgba(8, 8, 8, 0.226);
-	 }
 }
+
 
 body{
 	color: var(--text-color);
@@ -55,7 +53,7 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	background: var(--bg-color);
-	padding: 17px 90px;
+	padding: 10px 80px;
 	box-shadow: 0 0.5rem rgba(119, 116, 116, 0.144);
 }
 
@@ -77,7 +75,6 @@ header{
 	font-size:1rem;
 	padding: 10px 20px;
 	color: var(--text-color);
-	font-weight: 500;
  }
 
  .navbar a:hover{
@@ -126,7 +123,7 @@ header{
  }
 
  .box:hover{
-	box-shadow: 0 8px 8px rgba(8, 8, 8, 0.226);
+	box-shadow: 0 8px 8px rgba(255, 255, 255, 0.226);
  }
  .box-img{
 	width: 200px;
@@ -277,6 +274,7 @@ header{
 }
 .prod-review .preview.active{
 	display:inline-block;
+	
 	
 }
 .prod-review .preview img{
