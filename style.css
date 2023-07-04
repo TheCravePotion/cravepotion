@@ -185,7 +185,6 @@ header{
 	border-radius: 0.5rem;
 	box-shadow: 0 2px 4px rgba(255, 253, 251, 0.473);
 	padding: 10px;
-	outline-offset: -1.5rem;
 	cursor: pointer;
  }
 
