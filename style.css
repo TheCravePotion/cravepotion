@@ -34,10 +34,10 @@ body.active{
 	--text-color:#1e1c2a;
 	--bg-color:#fff;
 	#contact{
-	background-color: #e7e2ff7e;
+	background-color: #FFCEFE;
 	}
 	#boxcon{
-	box-shadow: 0 8px 8px rgba(225, 245, 245, 0.31);
+	box-shadow: 1px 8px 8px rgba(225, 245, 245, 0.31);
 	}
 }
 
@@ -265,7 +265,7 @@ header{
 	font-size: var(--h2-font);
 }
 .contact{
-	background-color: #E1ECC8;
+	background-color: #A7727D;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 	gap: 1.5rem;
