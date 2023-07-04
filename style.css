@@ -185,13 +185,12 @@ header{
 	border-radius: 0.5rem;
 	box-shadow: 0 2px 4px rgba(255, 253, 251, 0.473);
 	padding: 10px;
-	outline: .1rem solid #222;
 	outline-offset: -1.5rem;
 	cursor: pointer;
  }
 
  .box:hover{
-	outline: .2rem solid #222;
+	outline: .2rem solid #ffffff;
 	outline-offset: 0;
 
  }
