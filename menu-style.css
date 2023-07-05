@@ -11,6 +11,10 @@
 	scroll-padding-top: 4rem;
 	list-style: none;
 	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s ease;
 }
 
 *::selection{
@@ -58,23 +62,19 @@ header{
 }
 
 .logo1{
-	width: 130px;
+	width: 110px;
 	cursor: pointer;
 }
 
-.logo
-{
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: var(--main-color);
-}
+
 .navbar{
 	display: flex;
 }
- .navbar a{
+.navbar a{
 	font-size:1rem;
 	padding: 10px 20px;
 	color: var(--text-color);
+	font-weight: 500;
  }
 
  .navbar a:hover{
@@ -208,7 +208,7 @@ header{
 }
 #darkmode{
 	position: absolute;
-	top: 1.4rem;
+	top: 2rem;
 	right: 2rem;
 }
 
@@ -246,19 +246,76 @@ header{
 	}
 }
 
-.box-img:hover{
-	transform: scale(.9);
+.container{
+	max-width: 1300px;
+	margin:0 auto;
+	padding: 3rem 2rem;
+}
+
+.container .title{
+	margin-top: 100px;
+	font-size: 3.5rem;
+	color: var(--text-color);
+	margin-bottom: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container .product-container{
+	display: grid;
+	grid-template-columns:  repeat(auto-fit, minmax(30rem,1fr));
+	gap: 2rem;
+}
+.container .product-container .product{
+	text-align: center;
+	padding: 3rem 2rem;
+	background: var(--bg-color);
+	box-shadow: 0 .3rem .5rem var(--text-color);
+	outline: .1rem solid var(--text-color);
+	outline-offset: -1.5rem;
+	cursor: pointer;
+
+}
+
+.container .product-container .product:hover{
+	outline: .2rem solid var(--text-color);
+	outline-offset: 0;
+}
+
+.container .product-container .product img{
 	
- }
+	height: 25rem;
+}
+
+.prod-review .preview img{
+	
+	height: 25rem;
+}
+
+.container .product-container .product:hover img{
+	transform: scale(.9);
+}
+.container .product-container .product h3{
+	padding: .5rem;
+	font-size: 2rem;
+	color: var(--text-color);
+}
+.container .product-container .product .price{
+	font-size: 2rem;
+	color: var(--text-color);
+}
+.container .product-container .product:hover h3{
+	color: var(--main-color);
+}
 
 .prod-review{
-	margin-top: 50px;
+	margin-top: 65px;
 	position: fixed;
-	top: 0 ;
+	top: 0; 
 	left: 0;
-	min-height: 100vh;
-	width: 100%;
-	background: rgba(0,0,0,.8);
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(0,0,0,0.8);
 	display: none;
 	align-items: center;
 	justify-content: center;
@@ -267,91 +324,81 @@ header{
 	display: none;
 	padding: 2rem;
 	text-align: center;
-	background: #fff;
-	position:relative;
+	background: var(--text-color);
+	color: var(--bg-color);
+	position: relative;
 	margin: 2rem;
 	width: 40rem;
-}
+
+} 
 .prod-review .preview.active{
-	display:inline-block;
-	
-	
+	display: inline-block;
 }
+
 .prod-review .preview img{
 	height: 25rem;
 }
 
-.prod-review .preview .fa-times{
-	position:absolute;
-	top: .5rem; right: 1rem;
+.fa-times{
+	position: absolute;
+	top: 1rem; right: 1rem;
 	cursor: pointer;
-	color: #1e1c2a;
-	font-size: 2.5rem;
-
+	color: var(--bg-color);
+	font-size: 2rem;
 }
-
 .prod-review .preview .fa-times:hover{
 	transform: rotate(90deg);
 }
 
 .prod-review .preview h3{
-	color: #444;
-	padding: .5rem 0;
-	font-size: 2.5rem;
+	color: var(--bg-color);
+	padding: .3rem 0;
+	font-size: 2rem;
 }
 .prod-review .preview .fa-star{
-	font-size: 1.7rem ;
-	color: #ffa400;
-	margin-bottom: 20px;
+	padding: .3rem;
+	font-size: 1.7rem;
+	color: var(--main-color);
 }
 .prod-review .preview span{
 	color: #999;
 }
 .prod-review .preview p{
 	line-height: 1.5;
-	padding: 5px 0;
-	font-size: 1.2rem;
-	color:#464646;
+	padding: 1rem 0;
+	color: #777;
 }
-
 .prod-review .preview .price{
-	padding: 3px 0;
-	font-size: 1.5rem;
-	color: #3a3a39;
+	padding: .1rem .1rem;
+	font-size: 1rem;
+	color: var(--bg-color);
 }
 
 .prod-review .preview .buttons{
 	display: flex;
-	gap: 1.5rem;
+	gap: .5rem;
 	flex-wrap: wrap;
 	margin-top: .5rem;
-
 }
 
 .prod-review .preview .buttons a{
-	flex: .5 .5 10rem;
-	padding: 3px;
-	font-size:1.3rem;
-	color: #5e3d00;
-	border: 3px solid #ad7203;
+	flex: .5 .5 16rem;
+	padding: .2rem;
+	font-size: 1rem;
+	color: var(--bg-color);
+	border: .2rem solid var(--bg-color);
 }
 
 .prod-review .preview .buttons a.cart{
-	background: #f8b02a;
-	color: #5e3d00;
+	background: var(--bg-color);
+	color: var(--text-color);
 }
-
 .prod-review .preview .buttons a.cart:hover{
-	background: #855d12;
-	color: #f5f5f5;
-}
-
-.prod-review .preview .buttons a.buy{
-	background: #f8b02a;
-	color: #5e3d00;
+	background: var(--text-color);
+	color: var(--bg-color);
 }
 
 .prod-review .preview .buttons a.buy:hover{
-	background: #855d12;
-	color: #f5f5f5;
+	background: var(--bg-color);
+	color: var(--text-color);
 }
