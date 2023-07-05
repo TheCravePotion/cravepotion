@@ -402,8 +402,6 @@ header{
 	background: var(--bg-color);
 	color: var(--text-color);
 }
-
-
 @media(max-width:991px){
 	html{
 		font-size: 55%;
