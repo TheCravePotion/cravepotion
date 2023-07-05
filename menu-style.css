@@ -413,8 +413,12 @@ header{
 	.prod-review .preview img{
 		height: 20rem;
 	}	
+	.prod-review{
+		width: 50%;
+	}
+	
 	.navbar a{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	#menu-icon {
 		display: initial;
@@ -428,8 +432,5 @@ header{
 	html{
 		font-size: 55%;
 	}
-	.prod-review .preview img{
-		height: 15rem;
-	}
-	
+
 }
