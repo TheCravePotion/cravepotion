@@ -48,7 +48,6 @@
 		<a href="index.html"><img src="img/Logo1.png" class="logo1" alt="The Crave Potion Logo"><a href="#"></a>
 		<!--<a href="#" class="logo" i >The Crave Potion</a>-->
 		<div class="bx bx-menu" id="menu-icon"></div>
-
 		<ul class="navbar">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="https://www.facebook.com/TheCravePotion/">Contact</a></li>
@@ -58,77 +57,53 @@
 	</header>
 
 <!--Menu Page-->
-	<section class="menu" id="menu">
-		<div class="heading">
-			<span>Our Menu</span>
-			<h2>Tasty menu</h2>
+	
+<div class="container">
+	<h3 class="title">Our Menu</h3>
+	<div class="product-container">
+
+		<div class="product"data-name='carbonara'>
+			<img src="img/Carbonara.jpg" alt="">
+			<h3>Carbonara</h3>
+			<div class="price">Php.95.00</div>
 		</div>
-		<div class="menu-container">
-			<!--Menu 1-->
-			<div class="box" id="boxcon" data-name="carbonara">
-				<div class="box-img">
-					<img src="img/Carbonara.jpg" alt="Creamy Carbonara" >
-				</div>
-				<h2>Carbonara</h2>
-				<h3>Authentic Creamy</h3>
-				<span>Php 95.00</span>
-				<i class='bx bx-cart'></i>
-			</div>
-			<!--Menu 2-->
-			<div class="box" id="boxcon" data-name="Lasagña">
-				<div class="box-img">
-					<img src="img/Lasagna.jpg" alt="Creamy Lasagña" >
-				</div>
-				<h2>Lasagña</h2>
-				<h3>Authentic Creamy and pure beef</h3>
-				<span>Php 120.00</span>
-				<i class='bx bx-cart'></i>
-			</div>
-			<!--Menu 3-->
-			<div class="box" id="boxcon" data-name="Mango-graham">
-				<div class="box-img">
-					<img src="img/Mango-graham.png" alt="Mango Graham" >
-				</div>
-				<h2>Mango Graham</h2>
-				<h3>Real mango on top</h3>
-				<span>Php 110.00</span>
-				<i class='bx bx-cart'></i>
-			</div>
-			<!--Menu 4-->
-			<div class="box" id="boxcon" data-name="Puto">
-				<div class="box-img">
-					<img src="img/Photo.jpg" alt="Puto" >
-				</div>
-				<h2>Chesse / Salted Puto</h2>
-				<h3>10pcs | 20pcs | 30pcs</h3>
-				<span>Php 10.00 per pc</span>
-				<i class='bx bx-cart'></i>
-			</div>
-			<!--Menu 5-->
-			<div class="box" id="boxcon" data-name="Nachos">
-				<div class="box-img">
-					<img src="img/Nachos.jpg" alt="Nachos" >
-				</div>
-				<h2>Nachos</h2>
-				<h3>Meal Box</h3>
-				<span>Php 80.00</span>
-				<i class='bx bx-cart'></i>
-			</div>
-			<!--Menu 6-->
-			<div class="box" id="boxcon" data-name="spag">
-				<div class="box-img">
-					<img src="img/spag.jpg" alt="Spaghetti" >
-				</div>
-				<h2>Spaghetti</h2>
-				<h3>Meal Box</h3>
-				<span>Php 95.00</span>
-				<i class='bx bx-cart'></i>
-			</div>
+
+		<div class="product"data-name='lasagna'>
+			<img src="img/Lasagna.jpg" alt="">
+			<h3>Lasagña</h3>
+			<div class="price">Php.110.00</div>
 		</div>
-	</section>
+		
+		<div class="product"data-name='mango-graham'>
+			<img src="img/Mango-graham.png" alt="">
+			<h3>Mango-Graham</h3>
+			<div class="price">Php.95.00</div>
+		</div>
+		
+		<div class="product"data-name='nachos'>
+			<img src="img/Nachos.jpg" alt="">
+			<h3>Nachos</h3>
+			<div class="price">Php. 95.00</div>
+		</div>
+				
+		<div class="product"data-name='puto'>
+			<img src="img/Photo.jpg" alt="">
+			<h3>Salted | Chesse Puto</h3>
+			<div class="price">Php 10.00 | Php 7.00 per piece</div>
+		</div>
+						
+		<div class="product"data-name='spag'>
+			<img src="img/spag.jpg" alt="">
+			<h3>Spaghetti</h3>
+			<div class="price">Php.99.00</div>
+		</div>
+
+	</div>
+
+
 
 <div class="prod-review">
-	<div class="preview " data-name="carbonara">
+	<div class="preview " data-target="carbonara">
 		<i class="fa fa-times" aria-hidden="true"></i>
 		<img src="img/Carbonara.jpg">
 		<h3>Creamy Carbonara</h3>
@@ -148,7 +123,7 @@
 		</div>
 	</div>
 
-	<div class="preview" data-name="Lasagña">
+	<div class="preview" data-target="lasagna">
 		<i class="fa fa-times" aria-hidden="true"></i>
 		<img src="img/Lasagna.jpg">
 		<h3>Creamy Beff Lasagña</h3>
@@ -168,10 +143,10 @@
 		</div>
 	</div>
 	
-	<div class="preview" data-name="Mango-graham">
+	<div class="preview" data-target="mango-graham">
 		<i class="fa fa-times" aria-hidden="true"></i>
 		<img src="img//Mango-graham.png">
-		<h3>Real Mango Graham</h3>
+		<h3>Mango Graham</h3>
 		<div class="star">
 			<i class="fa fa-star" aria-hidden="true"></i>
 			<i class="fa fa-star" aria-hidden="true"></i>
@@ -188,7 +163,7 @@
 		</div>
 	</div>
 	
-	<div class="preview " data-name="Puto">
+	<div class="preview " data-target="puto">
 		<i class="fa fa-times" aria-hidden="true"></i>
 		<img src="img/Photo.jpg">
 		<h3>Chesse and Salted Puto</h3>
@@ -208,7 +183,7 @@
 		</div>
 	</div>
 	
-	<div class="preview " data-name="Nachos">
+	<div class="preview " data-target="nachos">
 		<i class="fa fa-times" aria-hidden="true"></i>
 		<img src="img/Nachos.jpg">
 		<h3>Nachos</h3>
@@ -229,7 +204,7 @@
 	</div>
 
 	
-	<div class="preview " data-name="spag">
+	<div class="preview " data-target="spag">
 		<i class="fa fa-times" aria-hidden="true"></i>
 		<img src="img/spag.jpg">
 		<h3>Spaghetti</h3>
@@ -254,7 +229,8 @@
 
 
 	<script src="https://unpkg.com/scrollreveal"></script>
-	<script src="main.js"></script>
+	<script src="main.js" defer></script>
+	<script src="menu.js" defer></script>
 	
 </body>
 </html>
