@@ -425,8 +425,11 @@ header{
 
 @media(max-width:450px){
 	
-	.navbar a{
-		font-size: 80%;
+	html{
+		font-size: 55%;
+	}
+	.prod-review .preview img{
+		height: 15rem;
 	}
 	
 }
