@@ -1,9 +1,9 @@
 let previewContainer =document.querySelector('.prod-review');
 let previewBox=previewContainer.querySelectorAll('.preview');
-document.querySelectorAll('.menu-container .box').forEach(box=>{
-	box.onclick = ()=>{
+document.querySelectorAll('.product-container .product').forEach(product=>{
+	product.onclick = ()=>{
 		previewContainer.style.display='flex';
-		let name = box.getAttribute('data-name');
+		let name = product.getAttribute('data-name');
 		previewBox.forEach(preview =>{
 			let target = preview.getAttribute('data-target');
 			if(name==target){
