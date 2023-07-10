@@ -71,7 +71,7 @@ header{
 	display: flex;
 }
 .navbar a{
-	font-size:1rem;
+	font-size:1.5rem;
 	padding: 10px 20px;
 	color: var(--text-color);
 	font-weight: 500;
@@ -208,8 +208,8 @@ header{
 }
 #darkmode{
 	position: absolute;
-	top: 2rem;
-	right: 2rem;
+	top: 1.5rem;
+	right: -5rem;
 }
 
 
@@ -356,7 +356,6 @@ header{
 	font-size: 2rem;
 }
 .prod-review .preview .fa-star{
-	padding: .3rem;
 	font-size: 1.7rem;
 	color: var(--main-color);
 }
@@ -365,12 +364,12 @@ header{
 }
 .prod-review .preview p{
 	line-height: 1.5;
-	padding: 1rem 0;
-	color: #777;
+	padding: .5rem 0;
+	color: #020101;
 }
 .prod-review .preview .price{
-	padding: .1rem .1rem;
-	font-size: 1rem;
+	padding-bottom: 15px;
+	font-size: 1.5rem;
 	color: var(--bg-color);
 }
 
